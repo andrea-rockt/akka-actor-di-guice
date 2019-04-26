@@ -33,7 +33,7 @@ object GuiceExtension extends ExtensionId[GuiceExtension] with ExtensionIdProvid
 
   override def createExtension(system: ExtendedActorSystem): GuiceExtension = {
 
-    val config = system.settings.config.atPath("akka.di.guice")
+    val config = system.settings.config.getConfig("akka.di.guice")
 
     val moduleFQDN = config.getString("module")
 
