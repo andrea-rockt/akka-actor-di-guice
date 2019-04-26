@@ -12,10 +12,12 @@ object Program {
 
 
     val system = ActorSystem.create("guice-di-example", moduleConfig)
+
     val injector = GuiceExtension(system).injector
 
+    val supervisor = GuiceExtension(system).supervisor ! AppSupervisor.Start
 
-    injector.getInstance(classOf[App]).start()
+
 
   }
 }
