@@ -1,4 +1,6 @@
-import actorsInjection.ActorDep
+package akka.di.example
+
+import akka.di.guice.ActorDep
 import com.google.inject.Inject
 
 class App @Inject() (printer: ActorDep[PrinterActor]) {

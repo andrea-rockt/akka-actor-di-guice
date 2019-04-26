@@ -1,4 +1,4 @@
-package actorsInjection
+package akka.di.guice
 
 import java.util.concurrent.atomic.AtomicReference
 

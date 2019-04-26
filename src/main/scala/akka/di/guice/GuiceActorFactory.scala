@@ -1,4 +1,4 @@
-package actorsInjection
+package akka.di.guice
 
 import akka.actor.{Actor, ActorContext, ActorRef, Props}
 

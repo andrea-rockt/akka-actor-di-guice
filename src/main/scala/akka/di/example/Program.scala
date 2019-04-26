@@ -1,4 +1,6 @@
-import actorsInjection.InjectorInstance
+package akka.di.example
+
+import akka.di.guice.InjectorInstance
 import com.google.inject.Guice
 
 object Program {

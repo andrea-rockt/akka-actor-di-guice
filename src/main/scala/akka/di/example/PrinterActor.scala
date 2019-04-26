@@ -1,6 +1,8 @@
-import PrinterActor.{JobCompletedMsg, PrintDocumentMsg}
-import actorsInjection.ActorFactory
+package akka.di.example
+
 import akka.actor._
+import akka.di.example.PrinterActor.{JobCompletedMsg, PrintDocumentMsg}
+import akka.di.guice.ActorFactory
 import com.google.inject.Inject
 
 object PrinterActor {

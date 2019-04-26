@@ -1,5 +1,7 @@
-import actorsInjection.{ActorDep, ActorFactory, GuiceActorFactory, GuiceActorDep}
+package akka.di.example
+
 import akka.actor.ActorSystem
+import akka.di.guice.{ActorDep, ActorFactory, GuiceActorDep, GuiceActorFactory}
 import com.google.inject._
 
 class AppModule extends AbstractModule {

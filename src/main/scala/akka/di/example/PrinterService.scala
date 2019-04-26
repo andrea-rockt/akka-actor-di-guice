@@ -1,3 +1,5 @@
+package akka.di.example
+
 
 trait PrinterService {
   def print(msg: String): Unit
@@ -5,6 +7,6 @@ trait PrinterService {
 
 class PrinterServiceImpl extends PrinterService {
   def print(msg: String): Unit = {
-    println(s"[PrinterService] $msg")
+    println(s"[akka.di.example.PrinterService] $msg")
   }
 }

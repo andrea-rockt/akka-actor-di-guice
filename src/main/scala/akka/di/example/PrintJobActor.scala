@@ -1,5 +1,7 @@
-import PrintJobActor.EndJobMsg
+package akka.di.example
+
 import akka.actor.Actor
+import akka.di.example.PrintJobActor.EndJobMsg
 import com.google.inject.Inject
 
 object PrintJobActor {
