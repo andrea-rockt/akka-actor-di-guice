@@ -1,7 +1,7 @@
 package akka.di.example
 
 import akka.actor.ActorSystem
-import akka.di.guice.{GuiceExtension, InjectorInstance}
+import akka.di.guice.GuiceExtension
 import com.typesafe.config.ConfigFactory
 
 object Program {
@@ -13,7 +13,6 @@ object Program {
 
     val system = ActorSystem.create("guice-di-example", moduleConfig)
     val injector = GuiceExtension(system).injector
-    InjectorInstance.set(injector)
 
 
     injector.getInstance(classOf[App]).start()
