@@ -6,8 +6,6 @@ import com.google.inject._
 
 class AppModule extends AbstractModule {
   override def configure(): Unit = {
-    // Actor system
-    bind(classOf[ActorSystem]).toInstance(ActorSystem.create())
 
     // Other components
     bind(classOf[PrinterService]).to(classOf[PrinterServiceImpl]).in(classOf[Singleton])
